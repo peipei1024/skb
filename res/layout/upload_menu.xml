@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEDEA"
+    android:orientation="vertical" >
+	<LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@drawable/background_action"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imageview_arrow_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dishname"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="25.5"
+            android:gravity="center"
+            android:text="上传菜谱"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/upload"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="发表"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+   
+
+       
+
+        
+
+       
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="92"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" >
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:hint="菜谱名称"
+                    android:inputType="text"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:textSize="18sp" >
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/difficult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="41dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="41dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="类别："
+                            android:textColor="#FDA61C"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/sort"
+                            android:layout_width="0dp"
+                            android:layout_height="41dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:textSize="18sp" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="41dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="41dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="时间："
+                            android:textColor="#FDA61C"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/Time"
+                            android:layout_width="0dp"
+                            android:layout_height="41dp"
+                            android:layout_weight="1.2"
+                            android:background="#ffffff"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:textSize="18sp" >
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.peixuze.ui.ListViewForScrollView
+                    android:id="@+id/food_List"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/difficult"
+                    android:layout_marginTop="30dp"
+                    android:scrollbars="none" />
+
+                <Button
+                    android:id="@+id/addFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/food_List"
+                    android:background="#ffffff"
+                    android:gravity="left|center_vertical"
+                    android:hint="+ 添加一种食材"
+                    android:paddingLeft="18dp"
+                    android:textColor="#FDA61C"
+                    android:textSize="18sp" />
+
+                <com.peixuze.ui.ListViewForScrollView
+                    android:id="@+id/condiment_List"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addFood"
+                    android:layout_marginTop="30dp"
+                    android:scrollbars="none" />
+
+                <Button
+                    android:id="@+id/addCondiment"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/condiment_List"
+                    android:background="#ffffff"
+                    android:gravity="left|center_vertical"
+                    android:hint="+ 添加一种调料"
+                    android:paddingLeft="18dp"
+                    android:textColor="#FDA61C"
+                    android:textSize="18sp" />
+
+                <com.peixuze.ui.ListViewForScrollView
+                    android:id="@+id/method_List"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addCondiment"
+                    android:layout_marginTop="30dp"
+                    android:scrollbars="none" />
+
+                <Button
+                    android:id="@+id/addMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/method_List"
+                    android:background="#ffffff"
+                    android:gravity="left|center_vertical"
+                    android:hint="+ 添加一步做法"
+                    android:paddingLeft="18dp"
+                    android:textColor="#FDA61C"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:src="@drawable/icon_addpic_focused"
+                        android:id="@+id/dishpic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" 
+                    android:layout_below="@id/addMethod"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

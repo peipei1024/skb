@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@drawable/background_action"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imageview_arrow_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/type_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="25.5"
+            android:gravity="center_vertical|left"
+            android:text="炒"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/activity_selectimg_send"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <ImageView
+		    android:layout_weight="14"
+		    android:layout_marginLeft="10dp" 
+		    android:layout_marginRight="5dp"
+		    android:layout_width="0dp"
+		    android:layout_gravity="center_vertical"
+		    android:layout_height="fill_parent"
+		    android:src="@drawable/line_orage"/>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.5">
+            <com.peixuze.ui.CircularImage
+                android:id="@+id/type_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_fenlei_gong" />
+        </LinearLayout>
+        
+        <ImageView
+		    android:layout_weight="14"
+		    android:layout_marginLeft="5dp" 
+		    android:layout_marginRight="10dp"
+		    android:layout_width="0dp"
+		    android:layout_gravity="center_vertical"
+		    android:layout_height="fill_parent"
+		    android:src="@drawable/line_orage"/>
+    </LinearLayout>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="45">
+        
+	    <com.handmark.pulltorefresh.library.PullToRefreshGridView  
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"  
+        android:id="@+id/pull_refresh_grid"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:scrollbars="none"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"  
+        android:horizontalSpacing="10dp"  
+        
+        android:stretchMode="columnWidth"  
+        android:verticalSpacing="10dp"  
+          
+        android:numColumns="2"  
+         
+        ptr:ptrDrawable="@drawable/icon_refresh"  
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrMode="both" />  
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#EFEDEA"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="@drawable/background_action"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imageview_arrow_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="25.5"
+            android:gravity="center_vertical|left"
+            android:text="收藏的菜谱"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/publish"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:text=""
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView  
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"  
+        android:id="@+id/pull_refresh_list" 
+        android:layout_width="fill_parent" 
+        android:layout_weight="52.5" 
+        android:layout_height="0dp"  
+        android:divider="@null"  
+        android:scrollbars="none"
+        ptr:ptrMode="both" >  
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    
+
+    
+
+   
+
+    
+
+    
+    
+
+</LinearLayout>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical" >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" />
+
+        <LinearLayout
+            android:id="@+id/tian"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+
+            <ImageButton
+                android:id="@+id/imageView_sweet"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="66"
+                android:background="#E46010"
+                android:src="@drawable/strawbarry" />
+
+            <Button
+                android:id="@+id/button_sweet"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="28"
+                android:background="#E46010"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="甜                                                      Sweet"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_dish"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:src="@drawable/defaultdishpic"
+        android:id="@+id/dishpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+         />
+
+    <TextView
+        android:id="@+id/dishname"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="纸杯蛋糕" />
+
+    <TextView
+        android:id="@+id/dishmethodnum"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="5个步骤"
+        android:textColor="#818080" />
+
+    <TextView
+        android:id="@+id/dishtime"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="用时10分钟"
+        android:textColor="#818080" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="..."
+        android:textColor="#4C4B48" />
+
+</LinearLayout>

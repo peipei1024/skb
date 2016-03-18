@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="@drawable/background_action"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imageview_arrow_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dishname"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="25.5"
+            android:gravity="center_vertical|left"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/activity_selectimg_send"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="35"
+            android:background="@drawable/background_side"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/background_side" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="账号" />
+
+                <com.peixuze.ui.LineEditText
+                    android:id="@+id/username"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:background="@null"
+                    android:hint="请输入账号"
+                    android:textColor="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/background_side" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="密码" />
+
+                <com.peixuze.ui.LineEditText
+                    android:id="@+id/userpassword"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:background="@null"
+                    android:hint="请输入密码"
+                    android:password="true"
+                    android:textColor="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/freeregister"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="17.5"
+            android:paddingLeft="10sp"
+            android:text="免费注册" />
+
+        <TextView
+            android:id="@+id/resetPassword"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="17.5"
+            android:gravity="right"
+            android:paddingRight="15px"
+            android:text="忘记密码" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/land"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="35"
+            android:background="@color/orange"
+            android:text="登录"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+
+        <!-- @横线处理 -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="35"
+            android:gravity="center"
+            android:text="通过以下方式登陆" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_weight="2" />
+
+        <ImageView
+            android:id="@+id/button_qq_land"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_weight="2"
+            android:background="@drawable/button_qq" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_weight="2" />
+
+        <ImageView
+            android:id="@+id/button_sina_land"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_weight="2"
+            android:background="@drawable/button_sina" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_weight="2" />
+
+        <ImageView
+            android:id="@+id/button_weichat_land"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_weight="2"
+            android:background="@drawable/button_weichat" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_weight="2" />
+
+        <ImageView
+            android:id="@+id/button_sms_land"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_weight="2"
+            android:background="@drawable/button_sms" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20sp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20sp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="QQ" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20sp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20sp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="微博" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20sp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20sp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="微信" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20sp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20sp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="短信" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20sp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20.5" />
+
+</LinearLayout>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="@drawable/background_action"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="23.5" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:text="首页"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/vadduser"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5" />
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:src="@drawable/search"
+            android:id="@+id/vmore"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5" />
+
+        
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <com.peixuze.ui.CircularImage
+                android:id="@+id/button_chao"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_fenlei_chao" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <com.peixuze.ui.CircularImage
+                android:id="@+id/button_dun"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_fenlei_dun" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <com.peixuze.ui.CircularImage
+                android:id="@+id/button_meng"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_fenlei_meng" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <com.peixuze.ui.CircularImage
+                android:id="@+id/button_sao"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_fenlei_sao" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <com.peixuze.ui.CircularImage
+                android:id="@+id/button_hui"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_fenlei_hui" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <com.peixuze.ui.CircularImage
+                android:id="@+id/button_liu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_fenlei_liu" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <com.peixuze.ui.CircularImage
+                android:id="@+id/button_zha"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_fenlei_zha" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <com.peixuze.ui.CircularImage
+                android:id="@+id/button_zheng"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_fenlei_zheng" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <com.peixuze.ui.CircularImage
+                android:id="@+id/button_ba"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_fenlei_ba" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <com.peixuze.ui.CircularImage
+                android:id="@+id/button_gong"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_fenlei_gong" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+		<ImageView
+		    android:layout_weight="17"
+		    android:layout_marginLeft="10dp" 
+		    android:layout_width="0dp"
+		    android:layout_gravity="center_vertical"
+		    android:layout_height="fill_parent"
+		    android:src="@drawable/left"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="今日推荐"
+            android:textColor="#393939" />
+        <ImageView
+		    android:layout_weight="17"
+		    android:layout_marginRight="10dp" 
+		    android:layout_width="0dp"
+		    android:layout_gravity="center_vertical"
+		    android:layout_height="fill_parent"
+		    android:src="@drawable/right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="31.5" >
+       
+       <com.handmark.pulltorefresh.library.PullToRefreshGridView  
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"  
+        android:id="@+id/pull_refresh_grid"  
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"  
+        android:scrollbars="none"
+        
+        android:horizontalSpacing="10dp"  
+       
+        android:verticalSpacing="10dp"  
+          
+        android:numColumns="2"  
+         
+        ptr:ptrDrawable="@drawable/icon_refresh"  
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrMode="both" />  
+        
+    </LinearLayout>
+	
+</LinearLayout>

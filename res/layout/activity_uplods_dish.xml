@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@color/orange"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imageview_arrow_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/type_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="25.5"
+            android:gravity="center_vertical|left"
+            android:text="上传菜谱"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/text_uplods_dish"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:text="上传"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <EditText 
+        android:textColor="#a7a7a7"
+        android:gravity="center"
+        android:hint="菜谱名称"
+        android:id="@+id/dishname"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"/>
+    <LinearLayout 
+        android:id="@+id/addcailiao"
+        android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="4">
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="增加一种材料"
+            android:textColor="@color/orange"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/cailiao" 
+        android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="4">
+        
+        
+    </LinearLayout>
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="38.5">
+	    <EditText 
+	        android:hint="材料"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:id="@+id/dishmaterial"/>
+	    <EditText 
+	        android:hint="time"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:id="@+id/dishtime"/>
+	    <EditText 
+	        android:hint="dishmethod"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:id="@+id/dishmethod"/>
+	    <EditText 
+	        android:hint="dishstyle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:id="@+id/dishstyle"/>
+	    <ImageView
+	        android:src="@drawable/zhibeidangao"
+	        android:id="@+id/dishpic"
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"/>
+	</LinearLayout>
+</LinearLayout>

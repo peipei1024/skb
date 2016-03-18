@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="@drawable/background_action"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imageview_arrow_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dishname"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="25.5"
+            android:gravity="center"
+            android:text="采购清单"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+	<LinearLayout 
+	    android:background="#EFEDEA"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="3">
+	    <TextView
+	        android:layout_marginLeft="10dp"
+	        android:textColor="#999999"
+	        android:gravity="left|center_vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:text="物品"/>
+	</LinearLayout>
+    <ListView
+        
+        android:id="@+id/listview"
+        android:divider="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="49.5"
+        android:background="#F2F2F2"
+        android:scrollbars="none" >
+
+       
+    </ListView>
+
+</LinearLayout>

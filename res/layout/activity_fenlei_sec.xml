@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="@drawable/background_action"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imageview_arrow_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/type_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="25.5"
+            android:gravity="center_vertical|left"
+            android:text="炒"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/activity_selectimg_send"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            
+            android:textColor="@color/white" />
+    </LinearLayout>
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:id="@+id/fenlei"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="6">
+	    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/shuan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+
+            <ImageButton
+                android:id="@+id/imageView_acid"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="66"
+                android:background="#05A440"
+                android:src="@drawable/lemon" />
+
+            <Button
+                android:id="@+id/button_acid"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="28"
+                android:background="#05A440"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="酸                                                    Acid"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+         <LinearLayout
+             android:visibility="gone"
+            android:id="@+id/tian"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+
+            <ImageButton
+                android:id="@+id/imageView_sweet"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="66"
+                android:background="#E46010"
+                android:src="@drawable/strawbarry" />
+
+            <Button
+                android:id="@+id/button_sweet"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="28"
+                android:background="#E46010"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="甜                                                      Sweet"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/la"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+
+            <ImageView
+                android:id="@+id/imageView_spicy"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="66"
+                android:background="#D4433F"
+                android:src="@drawable/pepper" />
+
+            <TextView
+                android:id="@+id/button_spicy"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="28"
+                android:background="#D4433F"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="辣                                                          Spicy"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+       
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/xian"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+
+            <ImageView
+                android:id="@+id/imageView_salt"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="66"
+                android:background="#EBC438"
+                android:src="@drawable/salt" />
+
+            <TextView
+                android:id="@+id/button_salty"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="28"
+                android:background="#EBC438"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="咸                                                           Salt"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+
+            <ImageView
+                android:id="@+id/imageView_more"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="66"
+                android:background="#82C703"
+                android:src="@drawable/more" />
+
+            <TextView
+                android:id="@+id/button_more"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="28"
+                android:background="#82C703"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="更多                                                           More"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+	</LinearLayout>
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="46.5">
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"/>
+	    <com.handmark.pulltorefresh.library.PullToRefreshGridView  
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"  
+        android:id="@+id/pull_refresh_grid"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:scrollbars="none"
+        
+        android:gravity="center_horizontal"  
+        android:horizontalSpacing="10dp"  
+        
+        android:stretchMode="columnWidth"  
+        android:verticalSpacing="10dp"  
+          
+        android:numColumns="2"  
+         
+        ptr:ptrDrawable="@drawable/icon_refresh"  
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrMode="both" />  
+	</LinearLayout>
+</LinearLayout>

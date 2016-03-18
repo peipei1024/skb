@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+  <EditText
+            android:id="@+id/food_name"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:hint="用料:例如五花肉"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textSize="15sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/food_much"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:hint="用量:例如250g"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textSize="15sp" >
+        </EditText>
+</LinearLayout>

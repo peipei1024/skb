@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical" >
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" />
+
+        <LinearLayout
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+
+            <ImageButton
+                android:id="@+id/imageView_more"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="66"
+                android:background="#82C703"
+                android:src="@drawable/more" />
+
+            <Button
+                android:id="@+id/button_more"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="28"
+                android:background="#82C703"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="更多                                                           More"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+</LinearLayout>

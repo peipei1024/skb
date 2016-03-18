@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#EFEDEA"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="@color/orange"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imageview_arrow_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="25.5"
+            android:gravity="center_vertical|left"
+            android:text="上传作品"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/button_uplod_work"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:text="发表"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#EAEAEA" />
+
+    <EditText
+        android:id="@+id/workname"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="美食名称"
+        android:textColor="#999999"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#EAEAEA" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EFEDEA" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#EAEAEA" />
+
+    <EditText
+        android:id="@+id/workcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="@color/white"
+        android:gravity="left|top"
+        android:hint="写下你的美食故事"
+        android:textSize="16dp" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:background="#EFEDEA" >
+
+        <ImageView 
+            android:id="@+id/workpic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_addpic_focused"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA" />
+    </LinearLayout>
+    
+
+</LinearLayout>

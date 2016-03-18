@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical" >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11" />
+
+        <LinearLayout
+            android:id="@+id/shuan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+
+            <ImageButton
+                android:id="@+id/imageView_acid"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="66"
+                android:background="#05A440"
+                android:src="@drawable/lemon" />
+
+            <Button
+                android:id="@+id/button_acid"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="28"
+                android:background="#05A440"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="酸                                                    Acid"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+		
+</LinearLayout>

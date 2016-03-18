@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.js.skb"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许应用打开网络套接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许应用访问网络上的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.js.skb.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/skb"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name="com.js.skb.ui.SkbActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.js.skb.ui.BaseActivity" >
+        </activity>
+        <activity android:name="com.js.skb.ui.IndexFenleiActivity" >
+        </activity>
+        <activity android:name="com.js.skb.ui.DishActivity" >
+        </activity>
+        <activity android:name="com.js.skb.ui.UplodsDishActivity" >
+        </activity>
+        <activity android:name="com.js.skb.ui.UplodsWorkActivity" >
+        </activity>
+        <activity android:name="com.js.skb.ui.LandActivity" >
+        </activity>
+        <activity
+            android:name="com.photoselector.ui.PhotoSelectorActivity"
+            android:label="图片选择" >
+        </activity>
+        <activity
+            android:name="com.photoselector.ui.PhotoPreviewActivity"
+            android:label="图片预览" >
+        </activity>
+        <activity android:name="com.js.skb.ui.FenleiActivity" >
+        </activity>
+        <activity android:name="com.js.skb.ui.PersonInfoActivity" >
+        </activity>
+        <activity android:name="com.js.skb.ui.MoreActivity" >
+        </activity>
+        <activity android:name="com.js.skb.ui.RegisterActivity" >
+        </activity>
+        <activity android:name="com.js.skb.ui.FootActivity" >
+        </activity>
+        <activity android:name=".ui.ShopListActitity" >
+        </activity>
+        <activity android:name=".ui.ShakeDishActivity" >
+        </activity>
+        <activity android:name=".ui.UpCommentActivity" >
+        </activity>
+        <activity android:name=".ui.WorkAllActivity" >
+        </activity>
+        <activity
+            android:name=".ui.CollectionDishActivity"
+            android:allowTaskReparenting="false"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTask"
+            android:multiprocess="true" >
+        </activity>
+        <activity android:name="com.js.skb.ui.BackPasswordActivity" >
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 短信注册sdk -->
+        <activity
+            android:name=".ui.UploadMenu"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="com.js.skb.ui.AddCondiment" >
+        </activity>
+        <activity android:name="com.js.skb.ui.AddFood" >
+        </activity>
+        <activity android:name="com.js.skb.ui.AddMethod" >
+        </activity>
+        <activity 
+            android:name="com.js.skb.ui.SearchActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEDEA"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_back"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="10"
+            android:background="#FDA61C"
+            android:paddingBottom="12dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/imageview_arrow_back" />
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="70"
+            android:background="#FDA61C"
+            android:gravity="center_vertical"
+            android:text="用料"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="20"
+            android:background="#FDA61C"
+            android:paddingBottom="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:paddingTop="12dp"
+            android:text="确定" 
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/food_name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:hint="食材"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="18sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/food_much"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:hint="用量"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textSize="18sp" >
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

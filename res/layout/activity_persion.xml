@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="@drawable/background_action"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imageview_arrow_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="29.5"
+            android:gravity="center_vertical|left"
+            android:text="个人中心"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="52.5"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin" >
+
+        <com.peixuze.ui.HoveringScrollview
+            android:id="@+id/hoveringScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_slide"
+                    android:layout_width="fill_parent"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="18.5"
+                        android:background="@drawable/user_background"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <com.peixuze.ui.CircularImage
+                                android:id="@+id/head"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/head" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/name"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="邦客"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/signature"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="吃货不是在吃就是在去吃的路上，没时间写签名..." />
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#EFEDEA" />
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_original"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical" >
+
+                    <!-- 这个悬浮条必须是固定高度 -->
+
+                    <LinearLayout
+                        android:id="@+id/hoveringLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/layout_dish_item"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/text_dish"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="0菜谱"
+                                android:textColor="@color/orange" />
+
+                            <ImageView
+                                android:id="@+id/image_dish"
+                                android:layout_width="50dp"
+                                android:layout_height="5dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/rc_btn_pub_service_follow_normal"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="#EAEAEA" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="#EAEAEA" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_works_item"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/text_works"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="0作品"
+                                android:textColor="#484848" />
+
+                            <ImageView
+                                android:id="@+id/image_works"
+                                android:layout_width="50dp"
+                                android:layout_height="5dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/rc_btn_pub_service_follow_normal"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="#EAEAEA" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fra"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:textSize="40sp" >
+                </FrameLayout>
+            </LinearLayout>
+        </com.peixuze.ui.HoveringScrollview>
+
+        <LinearLayout
+            android:id="@+id/layout_now"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
